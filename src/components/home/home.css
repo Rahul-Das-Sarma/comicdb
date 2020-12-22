@@ -90,4 +90,7 @@ transform: scale(1.05);
         margin: 0;
         padding: 100px 20px;
     }
+    .card-container::before{
+        display: none;
+    }
 }
