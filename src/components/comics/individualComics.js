@@ -9,7 +9,7 @@ function IndividualComics(props) {
   useEffect(() => {
     props.onRecieveID(comicID);
   }, [props.onRecieveID]);
-  console.log(props.showComics);
+  
   return (
     <div className="comic-container">
       {props.showComics.loading === true ? (
