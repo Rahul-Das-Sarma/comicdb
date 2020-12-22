@@ -46,8 +46,9 @@ const Character = (props) => {
             <div className="btn__link__container">
               <a
                 href={
+                  props.showCharacterInfo.characterInfo?
                   props.showCharacterInfo.characterInfo.data.data.results[0]
-                    .urls[0].url
+                    .urls[0].url : null
                 }
                 target="blank"
               >
@@ -55,9 +56,9 @@ const Character = (props) => {
                 <button className="btn btn-primary">wiki</button>
               </a>
               <a
-                href={
+                href={props.showCharacterInfo.characterInfo?
                   props.showCharacterInfo.characterInfo.data.data.results[0]
-                    .urls[2].url
+                    .urls[2].url : null
                 }
                 target="blank"
               >
@@ -68,9 +69,9 @@ const Character = (props) => {
             <p className="descriptio__para">
               <q className="quotes">
                 &nbsp;
-                {
+                {props.showCharacterInfo.characterInfo?
                   props.showCharacterInfo.characterInfo.data.data.results[0]
-                    .description
+                    .description : null
                 }
                 &nbsp;
               </q>
