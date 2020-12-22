@@ -1,0 +1,38 @@
+.top-nav-right-sidebar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 200;
+    background-color: rgb(27, 26, 26);
+  }
+
+.SideDrawer {
+   position: fixed;
+   max-width: 200px;
+   width: 90%;
+   top: 0;
+   left: 0;
+   height: 100%;
+   background-color: rgb(19, 18, 18);
+   z-index: 200;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease 0s;    
+}
+.SideDrawer.open {
+    
+    transform: translateX(0);
+}
+
+.SideDrawer ul {
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+.SideDrawer ul li{
+    padding: .8rem 1.5rem; 
+    margin: 10px;
+}
+.SideDrawer ul li:hover {
+    background-color: rgb(69, 61, 180);
+    border-radius: 7px;
+}

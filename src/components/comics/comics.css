@@ -1,0 +1,42 @@
+.comic-container{
+    margin: 30px 0 0 250px ;
+    color: #fff;
+}
+.comic-info-container{
+    display: flex;
+    
+}
+.comic-description{
+    margin: 0 0 0 60px;
+    position: relative;
+    opacity: 0;
+    animation: mynewmove 0.8s ease-out forwards;
+}
+@keyframes mynewmove{
+    from {transform: translateX(100%); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+    }
+.descriptio__comicpara{
+    max-width: 500px;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-top: 30px ;
+    font-family: 'Open Sans Condensed', sans-serif;
+   }
+
+   @media only screen and (max-width: 650px){
+    .comic-container{
+        margin: 90px 20px 20px 20px;
+    }
+    .comic-description{
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+    .comic-info-container{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .descriptio__comicpara{
+        text-align: center;
+    }
+   }   
