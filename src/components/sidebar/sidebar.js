@@ -40,7 +40,7 @@ function sidebar(props) {
           to={`/characters/${character.path}`}
           style={{ textDecoration: "none", color: "#fff" }}
         > 
-        <li key={index}>{character.title}</li>
+        <li key={index} onClick={props.closeSideBar}>{character.title}</li>
         </Link>
         ;
         })}

@@ -8,7 +8,7 @@ const Character = (props) => {
 
   const upperCaseCharacterName = characterNameAsId.toUpperCase();
 
-  console.log(props.showCharacterInfo);
+
   useEffect(() => {
     props.onSelectedCharacterInfo(upperCaseCharacterName);
   }, [props.onSelectedCharacterInfo]);
