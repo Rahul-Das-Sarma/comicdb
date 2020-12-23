@@ -8,7 +8,7 @@ function IndividualComics(props) {
 
   useEffect(() => {
     props.onRecieveID(comicID);
-  }, [props.onRecieveID]);
+  }, [comicID]);
   
   return (
     <div className="comic-container">

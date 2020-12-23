@@ -11,7 +11,7 @@ const Character = (props) => {
 
   useEffect(() => {
     props.onSelectedCharacterInfo(upperCaseCharacterName);
-  }, [props.onSelectedCharacterInfo]);
+  }, [upperCaseCharacterName]);
 
   return (
     <div className="character-container">
