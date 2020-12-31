@@ -1,7 +1,7 @@
 
 
 
-App is live in : https://rahul-marvel.netlify.app
+App is live in : https://rahuls-marvel.netlify.app
 
 
 
